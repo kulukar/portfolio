@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+* {
+  cursor: none;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+
+  font-family: var(--font-inter);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+}
+
+.heading-xl {
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.9;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
