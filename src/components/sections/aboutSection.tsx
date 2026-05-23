@@ -115,11 +115,11 @@ export default function AboutSection() {
               className="flex h-full flex-col justify-center"
             >
               <p className="max-w-xl text-justify text-lg leading-relaxed text-neutral-700">
-                I’m Sareh Azis Panegar, a UI/UX Designer focused on crafting
-                premium digital products through clean visual systems,
-                thoughtful interactions, and immersive user experiences. I
-                combine minimal aesthetics with modern motion to create
-                interfaces that feel intuitive and visually engaging.
+                I’m Sareh Azis Panegar, a UI/UX Designer based in Indonesia who
+                enjoys creating clean, modern, and user-friendly digital
+                experiences. I enjoy combining visuals, usability, and
+                simplicity to design interfaces that not only look good, but
+                also feel easy and comfortable to use.
               </p>
               {/* Stats */}
               <div className="mt-10 grid grid-cols-2 gap-2 ">
@@ -131,7 +131,7 @@ export default function AboutSection() {
                 </div>
 
                 <div className="rounded-sm border border-neutral-200 bg-white/70 p-5 backdrop-blur-sm shadow-sm">
-                  <p className="text-3xl font-semibold text-black">15+</p>
+                  <p className="text-3xl font-semibold text-black">7+</p>
                   <p className="mt-1 text-sm text-neutral-500">
                     Projects Completed
                   </p>
@@ -150,7 +150,7 @@ export default function AboutSection() {
                     transition={{
                       duration: 0.2,
                     }}
-                    className="group flex h-16 w-16 items-center justify-center rounded-2xl border border-neutral-200 bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-black"
+                    className="group flex h-16 w-16 items-center justify-center rounded-sm border border-neutral-200 bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-black"
                   >
                     <Image
                       src={tool.icon}

@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 
 const items = [
-  "UI/UX DESIGNER",
-  "GRAPHIC DESIGNER",
-  "CREATIVE THINKER",
-  "VISUAL STORYTELLER",
-  "FREELANCER",
-  "MINIMAL DESIGN",
-  "BRAND IDENTITY",
+  "DESIGNING WITH CLARITY",
+  "MINIMAL & FUNCTIONAL INTERFACES",
+  "USER-FIRST EXPERIENCES",
+  "VISUALS WITH PURPOSE",
+  "SOLVING PROBLEMS THROUGH DESIGN",
+  "CLEAN MODERN INTERFACES",
+  "INTUITIVE DIGITAL EXPERIENCES",
 ];
 
 export default function MarqueeSection() {
@@ -27,7 +27,7 @@ export default function MarqueeSection() {
           x: ["0%", "-50%"],
         }}
         transition={{
-          duration: 20,
+          duration: 40,
           repeat: Infinity,
           ease: "linear",
         }}
@@ -39,7 +39,7 @@ export default function MarqueeSection() {
               {item}
             </span>
 
-            <span className="text-neutral-300">✧</span>
+            <span className="text-neutral-300">✦</span>
           </div>
         ))}
       </motion.div>

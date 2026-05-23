@@ -316,6 +316,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   projects.length
               ].slug
             }`}
+            scroll
             className="group block"
           >
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">

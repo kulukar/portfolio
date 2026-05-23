@@ -3,11 +3,14 @@ type Project = {
   slug: string;
   category: string;
   year: string;
+
   description: string;
 
   thumbnail: string;
 
   gallery: string[];
+
+  featured: boolean;
 };
 
 export const projects: Project[] = [
@@ -25,6 +28,7 @@ export const projects: Project[] = [
     ],
     description:
       "A modern digital experience focused on interaction, visual clarity, and premium usability.",
+    featured: true,
   },
 
   {
@@ -41,6 +45,7 @@ export const projects: Project[] = [
     ],
     description:
       "A premium branding system designed with clarity, modern aesthetics, and strategic storytelling.",
+    featured: true,
   },
 
   {
@@ -56,6 +61,7 @@ export const projects: Project[] = [
     ],
     description:
       "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
+    featured: true,
   },
   {
     title: "Novas",
@@ -70,5 +76,21 @@ export const projects: Project[] = [
     ],
     description:
       "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
+    featured: true,
+  },
+  {
+    title: "Novasss",
+    slug: "novasss",
+    category: "Web Design",
+    year: "2024",
+    thumbnail: "/gallery/novasss/Thumbnail.png",
+    gallery: [
+      "/gallery/novasss/Galeri1.png",
+      "/gallery/novasss/Galeri2.png",
+      "/gallery/novasss/Galeri3.png",
+    ],
+    description:
+      "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
+    featured: true,
   },
 ];

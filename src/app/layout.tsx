@@ -5,6 +5,7 @@ import SmoothScrolling from "@/components/providers/smoothScrolling";
 import LoadingScreen from "@/components/loaders/loadingScreen";
 import PageTransition from "@/components/providers/pageTransition";
 import CustomCursor from "@/components/ui/customCursor";
+import ScrollToTop from "@/components/providers/scrollToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +28,10 @@ export default function RootLayout({
         <LoadingScreen />
         <CustomCursor />
         <SmoothScrolling>
-          <PageTransition>{children}</PageTransition>
+          <PageTransition>
+            <ScrollToTop />
+            {children}
+          </PageTransition>
         </SmoothScrolling>
       </body>
     </html>

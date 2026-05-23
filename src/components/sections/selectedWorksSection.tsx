@@ -7,6 +7,7 @@ import Link from "next/link";
 import ParallaxImage from "../ui/parallaxImage";
 
 export default function SelectedWorks() {
+  const featuredProjects = projects.filter((project) => project.featured);
   return (
     <section id="work" className="relative py-20">
       {/* Grid Background */}
@@ -28,7 +29,7 @@ export default function SelectedWorks() {
 
         {/* Projects */}
         <div className="space-y-16">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 60 }}
@@ -53,8 +54,7 @@ export default function SelectedWorks() {
                 </h3>
 
                 <p className="mt-4 max-w-sm text-sm leading-relaxed text-neutral-500">
-                  A modern digital experience focused on interaction, visual
-                  clarity, and premium usability.
+                  {project.description}
                 </p>
 
                 <div className="mt-6">

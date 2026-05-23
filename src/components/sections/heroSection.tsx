@@ -70,6 +70,9 @@ export default function HeroSection() {
               </AnimatePresence>
             </div>
           </motion.div>
+          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-neutral-400">
+            Sareh Azis Panegar — UI/UX Designer
+          </p>
 
           {/* Main Heading */}
           <div className="space-y-1">
