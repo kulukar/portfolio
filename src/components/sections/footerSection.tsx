@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Container from "../commons/Container";
 import Link from "next/link";
 import Image from "next/image";
+import TextReveal from "../commons/textReveal";
 
 const socials = [
   {
@@ -44,23 +45,24 @@ export default function FooterSection() {
           }}
           className="border-b border-neutral-200 pb-24"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
-            Connect with me
-          </p>
+          <TextReveal delay={0.2}>
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
+              Connect with me
+            </p>
 
-          <h2 className="mt-8 max-w-5xl text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.9] tracking-[-0.08em] text-white">
-            LET’S CRAFT
-            <br />
-            SOMETHING
-            <br />
-            AMAZING TOGETHER
-          </h2>
+            <h2 className="mt-8 max-w-5xl text-[clamp(4rem,10vw,9rem)] font-semibold leading-[0.9] tracking-[-0.08em] text-white">
+              LET’S CRAFT
+              <br />
+              SOMETHING
+              <br />
+              AMAZING TOGETHER
+            </h2>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-neutral-400">
-            Available for freelance projects, collaborations, and meaningful
-            digital experiences.
-          </p>
-
+            <p className="mt-8 max-w-xl text-lg leading-relaxed text-neutral-400">
+              Available for freelance projects, collaborations, and meaningful
+              digital experiences.
+            </p>
+          </TextReveal>
           <Link
             href="mailto:sarehazispanegar@gmail.com"
             className="group mt-12 inline-flex items-center gap-4 rounded-full border border-white/10 bg-white/5 px-12 py-3 backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:bg-white hover:text-black"

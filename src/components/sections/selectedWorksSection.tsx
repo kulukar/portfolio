@@ -5,6 +5,7 @@ import Container from "../commons/Container";
 import { projects } from "@/features/projects/data/projects";
 import Link from "next/link";
 import ParallaxImage from "../ui/parallaxImage";
+import TextReveal from "../commons/textReveal";
 
 export default function SelectedWorks() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -18,13 +19,15 @@ export default function SelectedWorks() {
       <Container>
         {/* Section Header */}
         <div className="mb-14">
-          <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
-            Selected Works
-          </p>
+          <TextReveal delay={0.2}>
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
+              Selected Works
+            </p>
 
-          <h2 className="mt-4 text-[clamp(2.2rem,4vw,4rem)] font-semibold tracking-[-0.06em] text-black">
-            Featured Projects
-          </h2>
+            <h2 className="mt-4 text-[clamp(2.2rem,4vw,4rem)] font-semibold tracking-[-0.06em] text-black">
+              Featured Projects
+            </h2>
+          </TextReveal>
         </div>
 
         {/* Projects */}

@@ -30,6 +30,7 @@ export default function RootLayout({
         <SmoothScrolling>
           <PageTransition>
             <ScrollToTop />
+
             {children}
           </PageTransition>
         </SmoothScrolling>

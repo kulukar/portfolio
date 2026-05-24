@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Container from "../commons/Container";
+import TextReveal from "../commons/textReveal";
 
 export default function HeroSection() {
   const texts = [
@@ -70,20 +71,23 @@ export default function HeroSection() {
               </AnimatePresence>
             </div>
           </motion.div>
-          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-neutral-400">
-            Sareh Azis Panegar — UI/UX Designer
-          </p>
 
-          {/* Main Heading */}
-          <div className="space-y-1">
-            <h1 className="text-[clamp(3rem,8vw,7rem)] font-semibold tracking-[-0.06em] text-black">
-              Design. Innovate.
-            </h1>
+          <TextReveal delay={0.2}>
+            <p className="mb-6 text-sm uppercase tracking-[0.35em] text-neutral-400">
+              Sareh Azis Panegar — UI/UX Designer
+            </p>
 
-            <h2 className="text-[clamp(2.5rem,7vw,6rem)] font-semibold tracking-[-0.06em] text-neutral-400">
-              Crafting modern UI/UX brilliance.
-            </h2>
-          </div>
+            {/* Main Heading */}
+            <div className="space-y-1">
+              <h1 className="text-[clamp(3rem,8vw,7rem)] font-semibold tracking-[-0.06em] text-black">
+                Design. Innovate.
+              </h1>
+
+              <h2 className="text-[clamp(2.5rem,7vw,6rem)] font-semibold tracking-[-0.06em] text-neutral-400">
+                Crafting modern UI/UX brilliance.
+              </h2>
+            </div>
+          </TextReveal>
 
           {/* Button */}
           <motion.div

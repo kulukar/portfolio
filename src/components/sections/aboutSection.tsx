@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Container from "../commons/Container";
 import Image from "next/image";
+import TextReveal from "../commons/textReveal";
 
 const tools = [
   {
@@ -52,13 +53,15 @@ export default function AboutSection() {
         <Container>
           {/* Section Header */}
           <div className="mb-14">
-            <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
-              Who Am I?
-            </p>
+            <TextReveal delay={0.2}>
+              <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
+                Who Am I?
+              </p>
 
-            <h2 className="mt-4 text-[clamp(2.5rem,5vw,5rem)] font-semibold tracking-[-0.06em] text-black">
-              About Me
-            </h2>
+              <h2 className="mt-4 text-[clamp(2.5rem,5vw,5rem)] font-semibold tracking-[-0.06em] text-black">
+                About Me
+              </h2>
+            </TextReveal>
           </div>
 
           {/* Main Content */}
@@ -114,13 +117,15 @@ export default function AboutSection() {
               }}
               className="flex h-full flex-col justify-center"
             >
-              <p className="max-w-xl text-justify text-lg leading-relaxed text-neutral-700">
-                I’m Sareh Azis Panegar, a UI/UX Designer based in Indonesia who
-                enjoys creating clean, modern, and user-friendly digital
-                experiences. I enjoy combining visuals, usability, and
-                simplicity to design interfaces that not only look good, but
-                also feel easy and comfortable to use.
-              </p>
+              <TextReveal delay={0.3}>
+                <p className="max-w-xl text-justify text-lg leading-relaxed text-neutral-700">
+                  I’m Sareh Azis Panegar, a UI/UX Designer based in Indonesia
+                  who enjoys creating clean, modern, and user-friendly digital
+                  experiences. I enjoy combining visuals, usability, and
+                  simplicity to design interfaces that not only look good, but
+                  also feel easy and comfortable to use.
+                </p>
+              </TextReveal>
               {/* Stats */}
               <div className="mt-10 grid grid-cols-2 gap-2 ">
                 <div className="rounded-sm border border-neutral-200 bg-white/70 p-5 backdrop-blur-sm shadow-sm">
