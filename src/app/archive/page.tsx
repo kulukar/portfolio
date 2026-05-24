@@ -6,6 +6,19 @@ export default function ArchivePage() {
   return (
     <main className="min-h-screen bg-white pt-32 pb-24 text-black">
       <Container>
+        {/* Back Button */}
+        <div className="mb-16">
+          <Link
+            href="/"
+            className="group inline-flex items-center gap-2 text-sm text-neutral-500 transition-colors duration-300 hover:text-black"
+          >
+            <span className="transition-transform duration-300 group-hover:-translate-x-1">
+              ←
+            </span>
+
+            <span>Back</span>
+          </Link>
+        </div>
         {/* Header */}
         <div className="mb-20">
           <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">

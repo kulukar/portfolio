@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "Takumi Polytechnic",
     slug: "takumi-polytechnic",
-    category: "UI/UX Design",
+    category: "Web Design",
     year: "2024",
     thumbnail: "/gallery/takumi/Thumbnail.png",
     gallery: [
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     title: "Kaigo Fukushishi",
     slug: "kaigo-fukushishi",
-    category: "UI/UX Design",
+    category: "Mobile Design",
     year: "2025",
     thumbnail: "/gallery/kaigo/Thumbnail.png",
     gallery: [
@@ -49,45 +49,48 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Nova",
-    slug: "nova",
+    title: "Ground Detector - KAI",
+    slug: "ground-detector-kai",
     category: "Web Design",
     year: "2024",
-    thumbnail: "/gallery/nova/Thumbnail.png",
+    thumbnail: "/gallery/ground/Thumbnail.png",
     gallery: [
-      "/gallery/nova/Galeri1.png",
-      "/gallery/nova/Galeri2.png",
-      "/gallery/nova/Galeri3.png",
+      "/gallery/ground/Galeri1.png",
+      "/gallery/ground/Galeri2.png",
+      "/gallery/ground/Galeri3.png",
+      "/gallery/ground/Galeri4.png",
     ],
     description:
       "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
     featured: true,
   },
   {
-    title: "Novas",
-    slug: "novas",
+    title: "Ride Index - KAI",
+    slug: "ride-index",
     category: "Web Design",
     year: "2024",
-    thumbnail: "/gallery/novas/Thumbnail.png",
+    thumbnail: "/gallery/ride/Thumbnail.png",
     gallery: [
-      "/gallery/novas/Galeri1.png",
-      "/gallery/novas/Galeri2.png",
-      "/gallery/novas/Galeri3.png",
+      "/gallery/ride/Galeri1.png",
+      "/gallery/ride/Galeri2.png",
+      "/gallery/ride/Galeri3.png",
+      "/gallery/ride/Galeri4.png",
     ],
     description:
       "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
     featured: true,
   },
   {
-    title: "Novasss",
-    slug: "novasss",
+    title: "Smart Classroom",
+    slug: "smart-classroom",
     category: "Web Design",
     year: "2024",
-    thumbnail: "/gallery/novasss/Thumbnail.png",
+    thumbnail: "/gallery/smart/Thumbnail.png",
     gallery: [
-      "/gallery/novasss/Galeri1.png",
-      "/gallery/novasss/Galeri2.png",
-      "/gallery/novasss/Galeri3.png",
+      "/gallery/smart/Galeri1.png",
+      "/gallery/smart/Galeri2.png",
+      "/gallery/smart/Galeri3.png",
+      "/gallery/smart/Galeri4.png",
     ],
     description:
       "A clean and immersive web experience crafted for performance, usability, and visual consistency.",
